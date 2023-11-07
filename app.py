@@ -66,5 +66,13 @@ for city in cities_json:
         location=city["location"], popup=city["name"], icon=folium.Icon(color=city["color"])))
 
 
+# GeoJson
+
+polygonLayer = folium.FeatureGroup(name="Geo Json")
+polygonLayer.add_child(folium.GeoJson(
+    data=open('world.json', 'r', encoding='utf-8-sig').read(), style_function=lambda x: {'fillColor': 'green' if x['properties']['POP2005'] < 1000000 else 'orange' if 10000000 <= x['properties']['POP2005'] < 20000000 else 'red'}))
+
 india_map.add_child(cities)
+india_map.add_child(polygonLayer)
+india_map.add_child(folium.LayerControl())
 india_map.save("generatedIndiaMap.html")
