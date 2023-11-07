@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_8183e544a10591c0bf8f7f4a7dbd78af {
+                #map_1fdbf88404b2457c14af8bf4999d22f9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_8183e544a10591c0bf8f7f4a7dbd78af" ></div>
+            <div class="folium-map" id="map_1fdbf88404b2457c14af8bf4999d22f9" ></div>
         
 </body>
 <script>
     
     
-            var map_8183e544a10591c0bf8f7f4a7dbd78af = L.map(
-                "map_8183e544a10591c0bf8f7f4a7dbd78af",
+            var map_1fdbf88404b2457c14af8bf4999d22f9 = L.map(
+                "map_1fdbf88404b2457c14af8bf4999d22f9",
                 {
                     center: [23.837415395428557, 78.73967196771261],
                     crs: L.CRS.EPSG3857,
@@ -60,10 +60,96 @@
 
         
     
-            var tile_layer_ab49c349fd6338694ffd1acc25444116 = L.tileLayer(
+            var tile_layer_e3aa7fe11304520b480992fd9ef6033f = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_8183e544a10591c0bf8f7f4a7dbd78af);
+            ).addTo(map_1fdbf88404b2457c14af8bf4999d22f9);
         
+    
+            var feature_group_4b9b8a3d0f9676ee417382d8e41300d2 = L.featureGroup(
+                {}
+            ).addTo(map_1fdbf88404b2457c14af8bf4999d22f9);
+        
+    
+            var marker_bbf79ca86d65fd6e87819dc8531863c7 = L.marker(
+                [26.710566759401036, 80.93976796750837],
+                {}
+            ).addTo(feature_group_4b9b8a3d0f9676ee417382d8e41300d2);
+        
+    
+            var icon_29432f5ef7f7ba8d82007222a65ccf07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bbf79ca86d65fd6e87819dc8531863c7.setIcon(icon_29432f5ef7f7ba8d82007222a65ccf07);
+        
+    
+        var popup_d25f71bee07a4d232db1ba81f0b16d42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4938d3e87fd5d05df05aa32bf6eb0462 = $(`<div id="html_4938d3e87fd5d05df05aa32bf6eb0462" style="width: 100.0%; height: 100.0%;">Lucknow</div>`)[0];
+                popup_d25f71bee07a4d232db1ba81f0b16d42.setContent(html_4938d3e87fd5d05df05aa32bf6eb0462);
+            
+        
+
+        marker_bbf79ca86d65fd6e87819dc8531863c7.bindPopup(popup_d25f71bee07a4d232db1ba81f0b16d42)
+        ;
+
+        
+    
+    
+            var marker_e1debd7185260d7fc5bf6f7408c5dd6f = L.marker(
+                [28.622308156232425, 77.20612915279953],
+                {}
+            ).addTo(feature_group_4b9b8a3d0f9676ee417382d8e41300d2);
+        
+    
+            var icon_fed22f80df56ac1e7e91034410377dfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e1debd7185260d7fc5bf6f7408c5dd6f.setIcon(icon_fed22f80df56ac1e7e91034410377dfd);
+        
+    
+        var popup_5a4cf6696fe023ed91ae411404533465 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5904cc000f8a3b4b338e2cadcff7d47d = $(`<div id="html_5904cc000f8a3b4b338e2cadcff7d47d" style="width: 100.0%; height: 100.0%;">Delhi</div>`)[0];
+                popup_5a4cf6696fe023ed91ae411404533465.setContent(html_5904cc000f8a3b4b338e2cadcff7d47d);
+            
+        
+
+        marker_e1debd7185260d7fc5bf6f7408c5dd6f.bindPopup(popup_5a4cf6696fe023ed91ae411404533465)
+        ;
+
+        
+    
+    
+            var marker_14daf441fa9cb89f940f0ddbece94c96 = L.marker(
+                [27.176933823103095, 75.81147977428485],
+                {}
+            ).addTo(feature_group_4b9b8a3d0f9676ee417382d8e41300d2);
+        
+    
+            var icon_0da5b2cfbc970429d9077452f2104a96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_14daf441fa9cb89f940f0ddbece94c96.setIcon(icon_0da5b2cfbc970429d9077452f2104a96);
+        
+    
+        var popup_a282134885385701b669f7e73194e43c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14226ce1dac7f35899203855b73e1dff = $(`<div id="html_14226ce1dac7f35899203855b73e1dff" style="width: 100.0%; height: 100.0%;">Jaipur</div>`)[0];
+                popup_a282134885385701b669f7e73194e43c.setContent(html_14226ce1dac7f35899203855b73e1dff);
+            
+        
+
+        marker_14daf441fa9cb89f940f0ddbece94c96.bindPopup(popup_a282134885385701b669f7e73194e43c)
+        ;
+
+        
+    
 </script>
 </html>
