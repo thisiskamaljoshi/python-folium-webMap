@@ -1,5 +1,4 @@
 import folium
-import pandas
 
 
 india_map = folium.Map(
